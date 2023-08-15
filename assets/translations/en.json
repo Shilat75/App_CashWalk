@@ -1,0 +1,17 @@
+{
+    "general": {
+        "search": "Search",
+        "select_all": "Select All",
+        "clear_all": "Clear All",
+        "sebmit": "Submit",
+        "yes": "Yes",
+        "no": "No",
+        "cancel": "Cancel",
+        "ok": "OK",
+        "error": "Error",
+        "next": "Next"
+    },
+    "main": {
+        "app": "app"
+    }
+}
