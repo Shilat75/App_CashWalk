@@ -1,3 +1,4 @@
+import 'package:cash_wallet/constants/colors.dart';
 import 'package:flutter/material.dart';
 
 class AppTheme {
@@ -55,5 +56,9 @@ class AppTheme {
   }
 
   static ThemeData lightTheme(BuildContext context) => theme(context, Brightness.light);
-  static ThemeData darkTheme(BuildContext context) => theme(context, Brightness.dark);
+  static ThemeData darkTheme(BuildContext context) {
+    final darkTheme = theme(context, Brightness.dark);
+    final darkThemeSchame = darkTheme.colorScheme.copyWith(background: AppColors.pageBackground);
+    return darkTheme.copyWith(colorScheme: darkThemeSchame, scaffoldBackgroundColor: AppColors.pageBackground, cardTheme: const CardTheme(color: AppColors.cardBackground));
+  }
 }
