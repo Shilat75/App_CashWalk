@@ -1,0 +1,17 @@
+{
+    "general": {
+        "search": "חיפוש",
+        "select_all": "בחר הכל",
+        "clear_all": "נקה הכל",
+        "submit": "אישור",
+        "yes": "כן",
+        "no": "לא",
+        "cancel": "ביטול",
+        "ok": "בסדר",
+        "error": "שגיאה",
+        "next": "הבא"
+    },
+    "main": {
+        "app": "app"
+    }
+}

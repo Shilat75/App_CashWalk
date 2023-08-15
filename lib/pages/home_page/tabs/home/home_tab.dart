@@ -1,4 +1,4 @@
-import 'package:cash_wallet/home_page/tabs/home/widgets/clip_card.dart';
+import 'package:cash_wallet/pages/home_page/tabs/home/widgets/clip_card.dart';
 import 'package:flutter/material.dart';
 
 class HomeTab extends StatefulWidget {

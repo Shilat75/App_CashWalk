@@ -1,11 +1,12 @@
 class R {
+  static const String translationsPathPrefix = 'translations';
   R._();
 
   static final assets = _ResAssets();
 }
 
-class _ResAssets { 
-  final clip = _svg('clip'); 
+class _ResAssets {
+  final clip = _svg('clip');
 }
 
 String _svg(String fileName) {
