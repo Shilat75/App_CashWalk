@@ -12,6 +12,7 @@
         "next": "Next"
     },
     "main": {
-        "app": "app"
+        "app": "app",
+        "daily_rewards":"DAILY REWARDS"
     }
 }

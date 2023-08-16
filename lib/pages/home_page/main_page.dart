@@ -1,6 +1,7 @@
 import 'package:cash_wallet/pages/base/base_translation.dart';
 import 'package:cash_wallet/pages/home_page/tabs/home/widgets/app_navigation_bar.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:rxdart/rxdart.dart';
 
 class MainPage extends StatefulWidget {
