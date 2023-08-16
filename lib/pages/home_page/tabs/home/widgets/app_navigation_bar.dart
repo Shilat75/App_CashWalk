@@ -1,12 +1,15 @@
 import 'package:cash_wallet/pages/home_page/tabs/home/home_tab.dart';
+import 'package:cash_wallet/utils/resources.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:rxdart/rxdart.dart';
 
 class AppNavigationBar extends StatefulWidget {
   final BehaviorSubject<AppTabs> navBarSubject;
   final Function(int) onSelected;
-  const AppNavigationBar({super.key, required this.navBarSubject, required this.onSelected});
+  const AppNavigationBar(
+      {super.key, required this.navBarSubject, required this.onSelected});
 
   @override
   State<AppNavigationBar> createState() => _AppNavigationBarState();
@@ -48,6 +51,12 @@ enum AppTabs {
     switch (this) {
       case home:
         return const Icon(Icons.home);
+      case wallet:
+        return const Icon(Icons.home);
+      case share:
+        return const Icon(Icons.home);
+      case user:
+        return const Icon(Icons.home);
       default:
         return const Icon(Icons.bookmark_rounded);
     }
@@ -56,6 +65,10 @@ enum AppTabs {
   Widget selectedIcon() {
     switch (this) {
       case home:
+        return const Icon(Icons.home_filled);
+      case wallet:
+        return const Icon(Icons.home_filled);
+      case user:
         return const Icon(Icons.home_filled);
       default:
         return const Icon(Icons.bookmark_outline_rounded);
@@ -71,7 +84,8 @@ enum AppTabs {
     }
   }
 
-  static List<NavigationDestination> getNavigationDestination(BuildContext context) {
+  static List<NavigationDestination> getNavigationDestination(
+      BuildContext context) {
     return AppTabs.values
         .map<NavigationDestination>((e) => NavigationDestination(
               tooltip: e.displayName(context),
